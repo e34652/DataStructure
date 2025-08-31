@@ -2,7 +2,7 @@ function solution(target, arr) {
   let answer;
   let start = 0;
   let end = arr.length - 1;
-  while (start <= end) {
+  while (start <= end) { // start와 end를 반복문 내부에서 동적 설정 
     let mid = Math.floor((start + end) / 2);
     if (target === arr[mid]) {
       answer = mid;
